@@ -2,7 +2,7 @@
  * @Author: benpjj 
  * @Date: 2018-09-08 14:06:15 
  * @Last Modified by: benpjj
- * @Last Modified time: 2018-09-11 17:32:14
+ * @Last Modified time: 2018-09-13 17:12:47
  */
 
 /* 京东首页的 css */
@@ -71,15 +71,14 @@
     height: 480px;
     float: left;
     margin: 0 10px;
-    
 }
 
 .jd_clo2_focus {
     width: 590px;
     height: 470px;
-    background-color: pink;
     margin-top: 10px;
     position: relative;
+    overflow: hidden;
 }
 
 .arr_l, .arr_r {
@@ -90,10 +89,11 @@
     height: 40px;
     line-height: 40px;
     text-align: center;
-    background-color: rgba(0, 0, 0, .3);
+    background-color: rgba(0, 0, 0, .1);
     font-family: "icomoon";
     color: #fff;
     font-size: 20px;
+    z-index: 2;
 }
 
 .arr_l {
@@ -111,6 +111,7 @@
     width: 152px;
     height: 18px;
     line-height: 18px;
+    z-index: 2;
 }
 
 .jd_clo2_focus ol li {
@@ -145,6 +146,21 @@
 
 .current::after {
     background-color: #fff; /* 只有通过这种方式，给 css 伪类 添加样式 */
+}
+
+.slider_item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    transition: opacity 500ms ease-in-out 0s; 
+    opacity: 0;
+}
+
+.slider_activity {
+    transition: opacity 500ms ease-in-out 0s; 
+    opacity: 1;
+    z-index: 1;
 }
 
 /* 中 右 */
@@ -184,12 +200,12 @@
     width: 190px;
     height: 480px;
     float: right;
+    background-color: #fff;
 }
 
 /* 登录部分 */
 .user {
     height: 150px;
-    background-color: #fff;
     padding: 10px 15px 0;
 }
 
@@ -214,17 +230,191 @@
     box-shadow: 3px 6px 25px #c3c3c3;
 }
 
+.user_tip, .user_profit {
+    font-size: 12px;
+    color: #888888;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.user_login, .user_reg {
+    color: #888888;
+    line-height: 12px;
+    background-color: #fff;
+    outline: none;
+}
+
+.user_login:hover, .user_reg:hover {
+    color: #f12015;
+}
+
+.user_profit a {
+    display: block;
+    width: 70px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    margin: 0 5px;
+    float: left;
+    border-radius: 13px;
+    -webkit-box-shadow: 6px 8px 20px rgba(45,45,45,.15);
+    -moz-box-shadow: 6px 8px 20px rgba(45,45,45,.15);
+    box-shadow: 6px 8px 20px rgba(45,45,45,.15);
+    -webkit-transition: background .3s ease,color .3s ease;
+    -moz-transition: background .3s ease,color .3s ease;
+    transition: background .3s ease,color .3s ease;
+}
+
+.user_profit_xr {
+    color: #f12015;
+    background-color: #fff;
+}
+
+.user_profit_plus {
+    color: #dbce8b;
+    font-weight: 700;
+    background-color: #363634;
+}
+
+.user_profit a:hover {
+    background-color: #f12015;
+    color: #fff;
+}
+
 /* 新闻部分 */
 .news {
-    height: 128px;
-    border-top: 1px solid #000;
-    border-bottom: 1px solid #000; 
+    height: 129px;
 }
 
+.tab-hd {
+    padding-top: 8px;
+    position: relative;
+}
+
+.tab-hd a {
+    display: inline-block;
+    font-size: 12px;
+    line-height: 13px;
+    color: #888888;
+}
+
+.tab-hd .tab_hd_item {
+    padding: 0 15px 2px;
+}
+
+.J_hd_item_first {
+    border-right: 1px solid #dbdbdb;
+}
+
+.tab-hd .more {
+    position: absolute;
+    right: 0;
+    bottom: 3px;
+}
+
+.tab-hd .more:hover {
+    color: #f12015;
+}
+
+.line {
+    width: 28px;
+    height: 2px;
+    background-color: #f12015; 
+    /* position: absolute;
+    top: 28px;
+    left: 12px; */
+    transition: all .5s ease;
+    -webkit-transform: translateX(13px);
+    -moz-transform: translateX(13px);
+    -ms-transform: translateX(13px);
+    transform: translateX(13px);
+}
+
+.tab-bd {
+    padding: 8px 15px 0;
+}
+
+.tab_bd_item li a {
+    display: block;
+    font-size: 10px;
+    line-height: 20px;
+    color: #666;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.J_bd_item_last {
+    display: none;
+}
+
+.tab_bd_item li:hover a {
+    color: #f12015;
+}
 /* 服务部分 */
-.jd_service {
-    height: 210px;
-    background-color: yellow;
+.jd_service .sevice_entry {
+    height: 165px;
+    line-height: 165px;
+    padding: 18px 11px 11px;
 }
 
+.jd_service li {
+    width: 42px;
+    height: 51px;
+    padding-top: 6px;
+    /* background-color: purple; */
+    /* border: 1px solid red; */
+    float: left;
+}
+
+.jd_service li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #d1c5ae;
+    text-align: center;
+    position: relative;
+}
+
+.jd_service a i.iconfont {
+    display: block;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 20px;
+    text-align: center;
+    background-color: #fff;
+    margin: 0 auto;
+}
+
+.jd_service a em {
+    display: block;
+    width: 42px;
+    height: 27px;
+    line-height: 27px;
+    font-size: 12px;
+}
+
+.jd_service li a:hover {
+    color: #f12015;
+}
+
+.service_corner {
+    position: absolute;
+    right: 0;
+    top: -10px;
+    display: block;
+    width: 12px;
+    height: 16px;
+    line-height: 12px;
+    text-align: center;
+    background-color:#e01121;
+}
+
+.service_corner_txt {
+    font-size: 12px;
+    line-height: 12px;
+    color: #fff;
+    vertical-align: top;
+}
 
