@@ -1,16 +1,14 @@
 /*
  * @Author: benpjj 
  * @Date: 2018-09-08 15:51:16 
- * @Last Modified by: benpjj
- * @Last Modified time: 2018-09-13 17:31:51
+ * @Last Modified by: mikey.zhaopeng
+ * @Last Modified time: 2018-09-13 23:27:59
  */
 
 /* 京东顶部 */
 $('#icon_close').click(function () {
     $('.J_event').hide()
 })
-
-
 
 /* 轮播图部分 */
 var index = ''
@@ -47,18 +45,25 @@ $('.jd_clo2_focus ol li').mouseenter(function () {
     circular($('.jd_clo2_focus ol li'), index)
     sowing(index - 1)
     arrow(index)
+    clearInterval(a)
+}).mouseleave(function () {
+    setInterval(animated, 3000)
 })
 
 arrow(0)
 
-setInterval(function () {
+
+function animated() {
     index++
     if (index == 8) {
         index = 0
     }
     sowing(index - 1)
     circular($('.jd_clo2_focus ol li'), index)
-}, 3000)
+}
+
+clearInterval(a)
+var a = setInterval(animated, 3000)
 
 /* 新闻部分 */
 $('.J_hd_item_first').mouseenter(function () {
