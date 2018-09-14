@@ -2,7 +2,7 @@
  * @Author: benpjj 
  * @Date: 2018-09-08 14:06:15 
  * @Last Modified by: benpjj
- * @Last Modified time: 2018-09-13 17:12:47
+ * @Last Modified time: 2018-09-14 11:48:02
  */
 
 /* 京东首页的 css */
@@ -102,6 +102,10 @@
 
 .arr_r {
     right: 0;
+}
+
+.arr_activity {
+    background-color: rgba(0, 0, 0, .5);
 }
 
 .jd_clo2_focus ol {
@@ -362,8 +366,6 @@
     width: 42px;
     height: 51px;
     padding-top: 6px;
-    /* background-color: purple; */
-    /* border: 1px solid red; */
     float: left;
 }
 

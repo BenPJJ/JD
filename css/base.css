@@ -2,7 +2,7 @@
  * @Author: benpjj 
  * @Date: 2018-09-08 11:54:40 
  * @Last Modified by: benpjj
- * @Last Modified time: 2018-09-13 08:49:44
+ * @Last Modified time: 2018-09-14 15:15:16
  */
 
 /* 版心 */
@@ -113,6 +113,8 @@ body {
     background: url(../images/5b8e49a0Nddd253d6.jpg) no-repeat 0 0;
     background-size: 100% 100%;
     position: relative;
+    opacity: 1;
+    transition: opacity 500ms ease-in-out 0s; 
 }
 
 .J_event a i {
@@ -129,6 +131,12 @@ body {
     color: #ef97b8;
     background-color: rgba(177, 89, 122, .3);
 }
+
+.event_ad {
+    transition: opacity 500ms ease-in-out 0s, height 500ms ease-in-out 0s; 
+    opacity: 0; 
+}
+
 /* 京东 顶部 end */
 
 /* 京东 快捷导航模块制作 start */
@@ -143,9 +151,10 @@ body {
 
 .shortcut .fl {
     padding-left: 200px;
+    position: relative;
 }
 
-.shortcut .fl li {
+.shortcut .fl .bj {
     padding: 0 7px; 
 }
 
@@ -154,6 +163,36 @@ body {
     font-style: normal;
     font-size: 14px;
     color: #f10215;
+}
+
+.fl_city {
+    position: absolute;
+    left: 200px;
+    top: 30px;
+    width: 300px;
+    background-color: #fff;
+    z-index: 3;
+    border: 1px solid #ccc;
+    -webkit-box-shadow: 1px 2px 1px rgba(0,0,0,.1);
+    -moz-box-shadow: 1px 2px 1px rgba(0,0,0,.1);
+    box-shadow: 1px 2px 1px rgba(0,0,0,.1);
+    line-height: 24px;
+}
+
+.fl_city .fl_city_item {
+    float: left;
+    width: 60px;
+    text-align: center;
+    padding: 2px 0;
+}
+
+.fl_city .fl_city_item a {
+    padding: 2px 8px;
+}
+
+.seleted {
+    background-color: #f10215;
+    color: #fff!important;
 }
 
 .shortcut a {

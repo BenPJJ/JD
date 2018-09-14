@@ -31,11 +31,46 @@
     <!-- 快捷导航模块制作开始 -->
     <div class="shortcut minx">
         <div class="w clear" style="background-color: #e3e4e5;">
-            <ul class="fl">
-                <li>
+            <ul class="fl" id="J_fl">
+                <li class="bj">
                     <i class="icon_pos"></i>
                     北京
                 </li>
+                <ul class="fl_city">
+                   <li class="fl_city_item"><a href="javascript:void(0)" class="seleted">北京</a></li> 
+                   <li class="fl_city_item"><a href="javascript:void(0)">天津</a></li> 
+                   <li class="fl_city_item"><a href="javascript:void(0)">重庆</a></li> 
+                   <li class="fl_city_item"><a href="javascript:void(0)">河北</a></li> 
+                   <li class="fl_city_item"><a href="javascript:void(0)">山西</a></li> 
+                   <li class="fl_city_item"><a href="javascript:void(0)">河南</a></li> 
+                   <li class="fl_city_item"><a href="javascript:void(0)">辽宁</a></li> 
+                   <li class="fl_city_item"><a href="javascript:void(0)">吉林</a></li> 
+                   <li class="fl_city_item"><a href="javascript:void(0)">黑龙江</a></li> 
+                   <li class="fl_city_item"><a href="javascript:void(0)">内蒙古</a></li> 
+                   <li class="fl_city_item"><a href="javascript:void(0)">江苏</a></li> 
+                   <li class="fl_city_item"><a href="javascript:void(0)">山东</a></li> 
+                   <li class="fl_city_item"><a href="javascript:void(0)">安徽</a></li> 
+                   <li class="fl_city_item"><a href="javascript:void(0)">浙江</a></li> 
+                   <li class="fl_city_item"><a href="javascript:void(0)">福建</a></li> 
+                   <li class="fl_city_item"><a href="javascript:void(0)">湖北</a></li> 
+                   <li class="fl_city_item"><a href="javascript:void(0)">湖南</a></li> 
+                   <li class="fl_city_item"><a href="javascript:void(0)">广东</a></li> 
+                   <li class="fl_city_item"><a href="javascript:void(0)">广西</a></li> 
+                   <li class="fl_city_item"><a href="javascript:void(0)">江西</a></li> 
+                   <li class="fl_city_item"><a href="javascript:void(0)">四川</a></li> 
+                   <li class="fl_city_item"><a href="javascript:void(0)">海南</a></li> 
+                   <li class="fl_city_item"><a href="javascript:void(0)">贵州</a></li> 
+                   <li class="fl_city_item"><a href="javascript:void(0)">云南</a></li> 
+                   <li class="fl_city_item"><a href="javascript:void(0)">西藏</a></li> 
+                   <li class="fl_city_item"><a href="javascript:void(0)">陕西</a></li> 
+                   <li class="fl_city_item"><a href="javascript:void(0)">甘肃</a></li> 
+                   <li class="fl_city_item"><a href="javascript:void(0)">青海</a></li> 
+                   <li class="fl_city_item"><a href="javascript:void(0)">宁夏</a></li> 
+                   <li class="fl_city_item"><a href="javascript:void(0)">港澳</a></li> 
+                   <li class="fl_city_item"><a href="javascript:void(0)">台湾</a></li> 
+                   <li class="fl_city_item"><a href="javascript:void(0)">钓鱼岛</a></li> 
+                   <li class="fl_city_item"><a href="javascript:void(0)">海外</a></li> 
+                </ul>
             </ul>
             <ul class="fr">
                 <li>
@@ -93,7 +128,7 @@
             </div>
             <!-- 搜索部分 -->
             <div class="search clear">
-                <input type="text" id="search_txt" class="search_txt" value="榨汁机家用">
+                <input type="text" id="J_search_txt" class="search_txt" value="榨汁机家用">
                 <!-- <input type="text" id="search_txt" class="search_txt" placeholder="榨汁机家用">  -->
                 <!-- placeholder ie10+ 及以上兼容，兼容性不好，建议使用 value来设置 -->
                 <button id="search_btn" class="search_btn">
@@ -103,7 +138,7 @@
             </div>
             <!-- 热词部分 -->
             <div class="lotwords">
-                <a href="#" class="style_red">超市周年庆</a>
+                <a href="#" class="style_red" id="J_lotword">超市周年庆</a>
                 <a href="#">国庆出游</a>
                 <a href="#">低至9.9</a>
                 <a href="#">笔记本</a>
@@ -616,5 +651,9 @@
 </body>
 <script src="./js/jquery-3.3.1.min.js"></script>
 <script src="./js/index.js"></script>
-
+<script src="./js/jquery-wheel-1.0.js"></script>
+<script>
+    // 轮播图插件
+    $('.jd_clo2_focus ul li').wheel(8)
+</script>
 </html>
