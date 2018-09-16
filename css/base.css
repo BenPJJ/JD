@@ -1,8 +1,8 @@
 /*
  * @Author: benpjj 
  * @Date: 2018-09-08 11:54:40 
- * @Last Modified by: benpjj
- * @Last Modified time: 2018-09-14 15:15:16
+ * @Last Modified by: mikey.zhaopeng
+ * @Last Modified time: 2018-09-16 12:18:31
  */
 
 /* 版心 */
@@ -154,8 +154,16 @@ body {
     position: relative;
 }
 
-.shortcut .fl .bj {
-    padding: 0 7px; 
+.shortcut .fl .bj{
+    height: 30px;
+    line-height: 30px;
+    padding: 0 7px;
+    border: 1px solid #e3e4e5;
+}
+
+.bj_activity {
+    background-color: #fff;
+    border-color: #dbdbdb!important; 
 }
 
 .icon_pos {
@@ -172,11 +180,17 @@ body {
     width: 300px;
     background-color: #fff;
     z-index: 3;
-    border: 1px solid #ccc;
+    border: 1px solid #dbdbdb;
+    border-top: 1px solid #fff;
     -webkit-box-shadow: 1px 2px 1px rgba(0,0,0,.1);
     -moz-box-shadow: 1px 2px 1px rgba(0,0,0,.1);
     box-shadow: 1px 2px 1px rgba(0,0,0,.1);
     line-height: 24px;
+    display: none;
+}
+
+.fl_city>ul {
+    float: left;
 }
 
 .fl_city .fl_city_item {
@@ -191,8 +205,84 @@ body {
 }
 
 .seleted {
-    background-color: #f10215;
+    background-color: #f10215!important;
     color: #fff!important;
+}
+
+.fl_city .fl_city_item:hover a {
+    background-color: #f4f4f4;
+}
+
+.sites {
+    float: left;
+    margin: 10px 0px 10px 15px;
+}
+
+.sites p {
+    padding-bottom: 10px;
+}
+
+.sites_items li {
+    float: left;
+    width: 130px;
+    height: 15px;
+    margin: 0 10px 10px 0;
+}
+
+.sites_items li a {
+    display: block;
+    line-height: 17px;
+}
+
+.sites_items a span {
+    float: left;
+    display: block;
+    line-height: 15px;
+}
+
+.sites_items li i {
+    float: left;
+    display: block;
+    width: 13px;
+    height: 13px;
+    background: url(../images/sprite.footer.png) no-repeat;
+    border: 1px solid #f4f4f4;
+}
+
+.sites_items i.icon_global {
+    background-position: -108px -154px;
+}
+
+.sites_items i.icon_cp {
+    width: 17px;
+    height: 8px;
+    background-position: -167px -157px;
+    margin-top: 2px;
+}
+
+.sites_items i.icon_si {
+    width: 17px;
+    height: 8px;
+    background-position: -147px -155px;
+    margin-top: 2px;
+}
+
+.sites_items i.icon_sde {
+    width: 17px;
+    background-position: -127px -154px
+}
+
+.sites_items i.icon_fangwen {
+    width: 17px;
+    background-position: -107px -171px;
+}
+
+.fl_city .line {
+    float: left;
+    width: 270px;
+    height: 1px;
+    margin: 0 auto;
+    background-color: #f4f4f4;
 }
 
 .shortcut a {

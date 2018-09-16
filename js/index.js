@@ -1,8 +1,8 @@
 /*
  * @Author: benpjj 
  * @Date: 2018-09-08 15:51:16 
- * @Last Modified by: benpjj
- * @Last Modified time: 2018-09-14 14:28:49
+ * @Last Modified by: mikey.zhaopeng
+ * @Last Modified time: 2018-09-16 16:30:45
  */
 
 /* 京东顶部 */
@@ -10,6 +10,29 @@ $('#icon_close').click(function () {
     $('.J_event').addClass('event_ad').animate({
         'height':'0px'
     }, 100)
+})
+
+/* 快捷导航模块制作 */
+$('#J_fl_city .fl_city_item').click(function () {
+    $('#J_fl_city .fl_city_item a').removeClass('seleted')
+    $(this).find('a').addClass('seleted')
+    $('.bj>a').text($(this).text()).attr('title', $(this).text())
+})
+
+$('.bj').mouseenter(function () {
+    $('.fl_city').show()
+    $(this).addClass('bj_activity')
+}).mouseleave(function () {
+    $('.fl_city').hide() 
+    $(this).removeClass('bj_activity')
+})
+
+$('.fl_city').mouseenter(function () {
+    $(this).show()
+    $('.bj').addClass('bj_activity')
+}).mouseleave(function () {
+    $(this).hide()
+    $('.bj').removeClass('bj_activity')
 })
 
 var i = 0
@@ -23,7 +46,6 @@ setInterval(function () {
     }
     $('#J_search_txt').attr('value', searchword[i])
 }, 5000)
-
 
 /* 热词部分 */
 var lotword = ['中秋海鲜劫', '食品超品日', '相机低价抢']
