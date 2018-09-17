@@ -1,0 +1,19 @@
+{
+  "name": "jd",
+  "version": "1.0.0",
+  "description": "## 1. 京东项目介绍",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BenPJJ/JD.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BenPJJ/JD/issues"
+  },
+  "homepage": "https://github.com/BenPJJ/JD#readme"
+}

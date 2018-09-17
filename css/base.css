@@ -1,8 +1,8 @@
 /*
  * @Author: benpjj 
  * @Date: 2018-09-08 11:54:40 
- * @Last Modified by: mikey.zhaopeng
- * @Last Modified time: 2018-09-16 12:18:31
+ * @Last Modified by: benpjj
+ * @Last Modified time: 2018-09-17 09:51:59
  */
 
 /* 版心 */
@@ -136,7 +136,6 @@ body {
     transition: opacity 500ms ease-in-out 0s, height 500ms ease-in-out 0s; 
     opacity: 0; 
 }
-
 /* 京东 顶部 end */
 
 /* 京东 快捷导航模块制作 start */

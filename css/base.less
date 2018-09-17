@@ -1,0 +1,277 @@
+/*
+ * @Author: benpjj 
+ * @Date: 2018-09-17 09:38:55 
+ * @Last Modified by: benpjj
+ * @Last Modified time: 2018-09-17 15:54:28
+ */
+
+// 变量
+@mainColor: #f10215;
+
+// 混合
+.right() {
+    float: right;
+}
+
+.left() {
+    float: left;
+}
+
+/* 版心 */
+.w {
+    width: 1190px;
+    margin: auto;
+}
+
+.minw {
+    min-width: 1024px;
+}
+
+.fr {
+    .right();
+}
+
+.fl {
+    .left();
+}
+
+.style_red {
+    color: @mainColor!important;
+}
+
+li {
+    list-style: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.clear::after {
+    visibility: hidden;
+    clear: both;
+    display: block;
+    content: "";
+    height: 0px;
+}
+
+.clear {
+    *zoom: 1;
+}
+
+input, button {
+    padding: 0;   
+    border: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6, p, dl, dt, dd {
+    margin: 0;
+}
+
+ol {
+    padding: 0;
+    margin: 0;
+}
+
+em, i {
+    font-style: normal;
+}
+
+/* iconfont  */
+@font-face {
+    font-family: 'iconfont';
+    src: url('../fonts/font_mvvc3v16awt/iconfont.eot');
+    src: url('../fonts/font_mvvc3v16awt/iconfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/font_mvvc3v16awt/iconfont.woff') format('woff'),
+    url('../fonts/font_mvvc3v16awt/iconfont.ttf') format('truetype'),
+    url('../fonts/font_mvvc3v16awt/iconfont.svg#iconfont') format('svg');
+}
+
+/* icomoon */
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?1nbz30');
+    src: url('../fonts/icomoon.eot?1nbz30#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?1nbz30') format('truetype'), url('../fonts/icomoon.woff?1nbz30') format('woff'), url('../fonts/icomoon.svg?1nbz30#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:16px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {  
+    background-color: #f0f3ef;
+}
+
+/* 京东 顶部 start */
+.J_event {
+    background-color: #e96b9a;
+    a {
+        display: block;
+        height: 80px;
+        background: url(../images/5b8e49a0Nddd253d6.jpg) no-repeat 0 0;
+        background-size: 100% 100%;
+        position: relative;
+        opacity: 1;
+        transition: opacity 500ms ease-in-out 0s; 
+        i {
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            right: 0;
+            top: 5px;
+            font-family: "icomoon";
+            font-style: normal;
+            font-weight: 500;
+            text-align: center;
+            line-height: 20px;
+            color: #ef97b8;
+            background-color: rgba(177, 89, 122, .3);
+        }
+    }
+}
+
+.event_ad {
+    transition: opacity 500ms ease-in-out 0s, height 500ms ease-in-out 0s; 
+    opacity: 0; 
+}
+/* 京东 顶部 end */
+
+/* 京东 快捷导航模块制作 start */
+.shortcut {
+    height: 30px;
+    line-height: 30px;
+    background-color: #e3e4e5;
+    border-bottom: 1px solid #dddddd;
+    font-size: 12px;
+    color: #999999;
+    .fl {
+        padding-left: 200px;
+        position: relative;
+        .bj {
+            height: 30px;
+            line-height: 30px;
+            padding: 0 7px;
+            border: 1px solid #e3e4e5;
+            .icon_pos {
+                font-family: "icomoon";
+                font-style: normal;
+                font-size: 14px;
+                color: #f10215;
+            }
+        }
+        .fl_city {
+            position: absolute;
+            left: 200px;
+            top: 30px;
+            width: 300px;
+            background-color: #fff;
+            z-index: 3;
+            border: 1px solid #dbdbdb;
+            border-top: 1px solid #fff;
+            -webkit-box-shadow: 1px 2px 1px rgba(0,0,0,.1);
+            -moz-box-shadow: 1px 2px 1px rgba(0,0,0,.1);
+            box-shadow: 1px 2px 1px rgba(0,0,0,.1);
+            line-height: 24px;
+            display: none;
+            >ul {
+                float: left;
+                .fl_city_item {
+                    float: left;
+                    width: 60px;
+                    text-align: center;
+                    padding: 2px 0;
+                    a {
+                        padding: 2px 8px;
+                    }
+                }
+            }
+            .line {
+                float: left;
+                width: 270px;
+                height: 1px;
+                margin: 0 auto;
+                background-color: #f4f4f4;
+            }
+            .sites {
+                float: left;
+                margin: 10px 0px 10px 15px;
+                p {
+                    padding-bottom: 10px;
+                }
+                .sites_items li {
+                    float: left;
+                    width: 130px;
+                    height: 15px;
+                    margin: 0 10px 10px 0;
+                    a {
+                        display: block;
+                        line-height: 17px;
+                        span {
+                            float: left;
+                            display: block;
+                            line-height: 15px;
+                        }
+                        i {
+                            float: left;
+                            display: block;
+                            width: 13px;
+                            height: 13px;
+                            background: url(../images/sprite.footer.png) no-repeat;
+                            border: 1px solid #f4f4f4;
+                        }
+                        i.icon_cp {
+                            width: 17px;
+                            height: 8px;
+                            background-position: -167px -157px;
+                            margin-top: 2px;
+                        }
+                        i.icon_si {
+                            width: 17px;
+                            height: 8px;
+                            background-position: -147px -155px;
+                            margin-top: 2px;
+                        }
+                        i.icon_sde {
+                            width: 17px;
+                            background-position: -127px -154px
+                        }
+                        i.icon_fangwen {
+                            width: 17px;
+                            background-position: -107px -171px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.bj_activity {
+    background-color: #fff;
+    border-color: #dbdbdb!important; 
+}
+
+.seleted {
+    background-color: #f10215!important;
+    color: #fff!important;
+}
+
+.fl_city .fl_city_item:hover a {
+    background-color: #f4f4f4;
+}
+
+.sites_items i.icon_global {
+    background-position: -108px -154px;
+}
