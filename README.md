@@ -195,3 +195,22 @@ i {
 
 ![图标三角](./media/icon_sanjiao01.jpg)
 
+## 9. 安装 less
+
+``` shell
+# 安装 less
+npm install less -g
+# 安装 clean-css 插件
+npm install less-plugin-clean-css -g
+
+# 使用方法
+lessc index.less index.css
+lessc index.less index.min.css -clean-css="advanced"
+```
+
+
+
+
+
+
+

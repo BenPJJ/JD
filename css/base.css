@@ -1,677 +1,584 @@
 /*
  * @Author: benpjj 
- * @Date: 2018-09-08 11:54:40 
+ * @Date: 2018-09-17 09:38:55 
  * @Last Modified by: benpjj
- * @Last Modified time: 2018-09-17 09:51:59
+ * @Last Modified time: 2018-09-18 14:28:53
  */
-
+/* 参数混合，适合处理 CSS3 的兼容问题 */
 /* 版心 */
 .w {
-    width: 1190px;
-    margin: auto;
+  width: 1190px;
+  margin: auto;
 }
-
 .minw {
-    min-width: 1024px;
+  min-width: 1024px;
 }
-
 .fr {
-    float: right;
+  float: right;
 }
-
 .fl {
-    float: left;
+  float: left;
 }
-
 .style_red {
-    color: #f10215!important;
+  color: #f10215 !important;
 }
-
 li {
-    list-style: none;
+  list-style: none;
 }
-
+ol,
 ul {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
-
-
 .clear::after {
-    visibility: hidden;
-    clear: both;
-    display: block;
-    content: "";
-    height: 0px;
+  visibility: hidden;
+  clear: both;
+  display: block;
+  content: "";
+  height: 0px;
 }
-
 .clear {
-    *zoom: 1;
+  *zoom: 1;
 }
-
-input, button {
-    padding: 0;   
-    border: 0;
+input,
+button {
+  padding: 0;
+  border: 0;
 }
-
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
-
-h1, h2, h3, h4, h5, h6, p, dl, dt, dd {
-    margin: 0;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+dl,
+dt,
+dd {
+  margin: 0;
 }
-
-ol {
-    padding: 0;
-    margin: 0;
+em,
+i {
+  font-style: normal;
 }
-
-em, i {
-    font-style: normal;
-}
-
 /* iconfont  */
 @font-face {
-    font-family: 'iconfont';
-    src: url('../fonts/font_mvvc3v16awt/iconfont.eot');
-    src: url('../fonts/font_mvvc3v16awt/iconfont.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/font_mvvc3v16awt/iconfont.woff') format('woff'),
-    url('../fonts/font_mvvc3v16awt/iconfont.ttf') format('truetype'),
-    url('../fonts/font_mvvc3v16awt/iconfont.svg#iconfont') format('svg');
+  font-family: 'iconfont';
+  src: url('../fonts/font_mvvc3v16awt/iconfont.eot');
+  src: url('../fonts/font_mvvc3v16awt/iconfont.eot?#iefix') format('embedded-opentype'), url('../fonts/font_mvvc3v16awt/iconfont.woff') format('woff'), url('../fonts/font_mvvc3v16awt/iconfont.ttf') format('truetype'), url('../fonts/font_mvvc3v16awt/iconfont.svg#iconfont') format('svg');
 }
-
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
 /* icomoon */
 @font-face {
-    font-family: 'icomoon';
-    src: url('../fonts/icomoon.eot?1nbz30');
-    src: url('../fonts/icomoon.eot?1nbz30#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?1nbz30') format('truetype'), url('../fonts/icomoon.woff?1nbz30') format('woff'), url('../fonts/icomoon.svg?1nbz30#icomoon') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'icomoon';
+  src: url('../fonts/icomoon.eot?1nbz30');
+  src: url('../fonts/icomoon.eot?1nbz30#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?1nbz30') format('truetype'), url('../fonts/icomoon.woff?1nbz30') format('woff'), url('../fonts/icomoon.svg?1nbz30#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
-
-.iconfont{
-    font-family:"iconfont" !important;
-    font-size:16px;font-style:normal;
-    -webkit-font-smoothing: antialiased;
-    -webkit-text-stroke-width: 0.2px;
-    -moz-osx-font-smoothing: grayscale;
+body {
+  background-color: #f0f3ef;
 }
-
-body {  
-    background-color: #f0f3ef;
-}
-
 /* 京东 顶部 start */
 .J_event {
-    background-color: #e96b9a;
+  background-color: #e96b9a;
 }
-
 .J_event a {
-    display: block;
-    height: 80px;
-    background: url(../images/5b8e49a0Nddd253d6.jpg) no-repeat 0 0;
-    background-size: 100% 100%;
-    position: relative;
-    opacity: 1;
-    transition: opacity 500ms ease-in-out 0s; 
+  display: block;
+  height: 80px;
+  background: url(../images/5b8e49a0Nddd253d6.jpg) no-repeat 0 0;
+  background-size: 100% 100%;
+  position: relative;
+  opacity: 1;
+  transition: opacity 500ms ease-in-out 0s;
 }
-
 .J_event a i {
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    right: 0;
-    top: 5px;
-    font-family: "icomoon";
-    font-style: normal;
-    font-weight: 500;
-    text-align: center;
-    line-height: 20px;
-    color: #ef97b8;
-    background-color: rgba(177, 89, 122, .3);
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 0;
+  top: 5px;
+  font-family: "icomoon";
+  font-weight: 500;
+  text-align: center;
+  line-height: 20px;
+  color: #ef97b8;
+  background-color: rgba(177, 89, 122, 0.3);
 }
-
-.event_ad {
-    transition: opacity 500ms ease-in-out 0s, height 500ms ease-in-out 0s; 
-    opacity: 0; 
+.event_activity {
+  transition: opacity 500ms ease-in-out 0s, height 500ms ease-in-out 0s;
+  opacity: 0;
 }
 /* 京东 顶部 end */
-
 /* 京东 快捷导航模块制作 start */
 .shortcut {
-    height: 30px;
-    line-height: 30px;
-    background-color: #e3e4e5;
-    border-bottom: 1px solid #dddddd;
-    font-size: 12px;
-    color: #999999;
+  height: 30px;
+  line-height: 30px;
+  background-color: #e3e4e5;
+  border-bottom: 1px solid #dbdbdb;
+  font-size: 12px;
+  color: #999999;
 }
-
 .shortcut .fl {
-    padding-left: 200px;
-    position: relative;
+  padding-left: 200px;
+  position: relative;
 }
-
-.shortcut .fl .bj{
-    height: 30px;
-    line-height: 30px;
-    padding: 0 7px;
-    border: 1px solid #e3e4e5;
+.shortcut .fl .bj {
+  height: 30px;
+  line-height: 30px;
+  padding: 0 7px;
+  border: 1px solid #e3e4e5;
 }
-
-.bj_activity {
-    background-color: #fff;
-    border-color: #dbdbdb!important; 
+.shortcut .fl .bj .icon_pos {
+  font-family: "icomoon";
+  font-size: 14px;
+  color: #f10215;
 }
-
-.icon_pos {
-    font-family: "icomoon";
-    font-style: normal;
-    font-size: 14px;
-    color: #f10215;
+.shortcut .fl .fl_city {
+  position: absolute;
+  left: 200px;
+  top: 30px;
+  width: 300px;
+  background-color: #fff;
+  z-index: 3;
+  border: 1px solid #dbdbdb;
+  border-top: 1px solid #fff;
+  -webkit-box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.1);
+  line-height: 24px;
+  display: none;
 }
-
-.fl_city {
-    position: absolute;
-    left: 200px;
-    top: 30px;
-    width: 300px;
-    background-color: #fff;
-    z-index: 3;
-    border: 1px solid #dbdbdb;
-    border-top: 1px solid #fff;
-    -webkit-box-shadow: 1px 2px 1px rgba(0,0,0,.1);
-    -moz-box-shadow: 1px 2px 1px rgba(0,0,0,.1);
-    box-shadow: 1px 2px 1px rgba(0,0,0,.1);
-    line-height: 24px;
-    display: none;
+.shortcut .fl .fl_city ul {
+  float: left;
 }
-
-.fl_city>ul {
-    float: left;
+.shortcut .fl .fl_city ul .fl_city_item {
+  float: left;
+  width: 60px;
+  text-align: center;
+  padding: 2px 0;
 }
-
-.fl_city .fl_city_item {
-    float: left;
-    width: 60px;
-    text-align: center;
-    padding: 2px 0;
+.shortcut .fl .fl_city ul .fl_city_item a {
+  padding: 2px 8px;
 }
-
-.fl_city .fl_city_item a {
-    padding: 2px 8px;
+.shortcut .fl .fl_city ul .fl_city_item:hover a {
+  background-color: #f4f4f4;
 }
-
-.seleted {
-    background-color: #f10215!important;
-    color: #fff!important;
+.shortcut .fl .fl_city .line {
+  float: left;
+  width: 270px;
+  height: 1px;
+  margin: 0 auto;
+  background-color: #f4f4f4;
 }
-
-.fl_city .fl_city_item:hover a {
-    background-color: #f4f4f4;
+.shortcut .fl .fl_city .sites {
+  float: left;
+  margin: 10px 0px 10px 15px;
 }
-
-.sites {
-    float: left;
-    margin: 10px 0px 10px 15px;
+.shortcut .fl .fl_city .sites p {
+  padding-bottom: 10px;
 }
-
-.sites p {
-    padding-bottom: 10px;
+.shortcut .fl .fl_city .sites .sites_items li {
+  float: left;
+  width: 130px;
+  height: 15px;
+  margin: 0 10px 10px 0;
 }
-
-.sites_items li {
-    float: left;
-    width: 130px;
-    height: 15px;
-    margin: 0 10px 10px 0;
+.shortcut .fl .fl_city .sites .sites_items li a {
+  display: block;
+  line-height: 17px;
 }
-
-.sites_items li a {
-    display: block;
-    line-height: 17px;
+.shortcut .fl .fl_city .sites .sites_items li a span {
+  float: left;
+  display: block;
+  line-height: 15px;
 }
-
-.sites_items a span {
-    float: left;
-    display: block;
-    line-height: 15px;
+.shortcut .fl .fl_city .sites .sites_items li a i {
+  float: left;
+  display: block;
+  width: 13px;
+  height: 13px;
+  background: url(../images/sprite.footer.png) no-repeat;
+  border: 1px solid #f4f4f4;
 }
-
-.sites_items li i {
-    float: left;
-    display: block;
-    width: 13px;
-    height: 13px;
-    background: url(../images/sprite.footer.png) no-repeat;
-    border: 1px solid #f4f4f4;
+.shortcut .fl .fl_city .sites .sites_items li a i.icon_global {
+  background-position: -108px -154px;
 }
-
-.sites_items i.icon_global {
-    background-position: -108px -154px;
+.shortcut .fl .fl_city .sites .sites_items li a i.icon_cp {
+  width: 17px;
+  height: 8px;
+  background-position: -167px -157px;
+  margin-top: 2px;
 }
-
-.sites_items i.icon_cp {
-    width: 17px;
-    height: 8px;
-    background-position: -167px -157px;
-    margin-top: 2px;
+.shortcut .fl .fl_city .sites .sites_items li a i.icon_si {
+  width: 17px;
+  height: 8px;
+  background-position: -147px -155px;
+  margin-top: 2px;
 }
-
-.sites_items i.icon_si {
-    width: 17px;
-    height: 8px;
-    background-position: -147px -155px;
-    margin-top: 2px;
+.shortcut .fl .fl_city .sites .sites_items li a i.icon_sde {
+  width: 17px;
+  background-position: -127px -154px;
 }
-
-.sites_items i.icon_sde {
-    width: 17px;
-    background-position: -127px -154px
+.shortcut .fl .fl_city .sites .sites_items li a i.icon_fangwen {
+  width: 17px;
+  background-position: -107px -171px;
 }
-
-.sites_items i.icon_fangwen {
-    width: 17px;
-    background-position: -107px -171px;
-}
-
-.fl_city .line {
-    float: left;
-    width: 270px;
-    height: 1px;
-    margin: 0 auto;
-    background-color: #f4f4f4;
-}
-
-.shortcut a {
-    font-size: 12px;
-    color: #999999;
-}
-
-.shortcut a:hover {
-    color: #f10215;
-}
-
 .shortcut .fr li {
-    float: left;
+  float: left;
 }
-
 .shortcut .fr li:nth-child(2n-1) {
-    padding: 0 7px;
+  padding: 0 7px;
 }
-
-.spacer {
-    width: 1px;
-    height: 10px;
-    background-color: #999999;
-    margin: 10px 10px;
+.shortcut .fr li.spacer {
+  width: 1px;
+  height: 10px;
+  background-color: #999999;
+  margin: 10px 10px;
 }
-
-.dorpdown {
-    padding-right: 15px!important;
-    position: relative;
+.shortcut .fr li.dorpdown {
+  padding-right: 15px!important;
+  position: relative;
 }
-
-.icon_ctrl {
-    width: 12px;
-    height: 12px;
-    line-height: 12px;
-    text-align: center;
-    font-family: "icomoon";
-    font-style: normal;
-    font-size: 12px;
-    position: absolute;
-    right: 0;
-    top: 11px;
-    vertical-align: middle;
-    /* -webkit-transform: rotate(180deg);
-    -ms-transform: rotate(180deg);
-    transform: rotate(180deg);  transform ie 9+ 以上支持 */
+.shortcut .fr li.dorpdown i.icon_ctrl {
+  width: 12px;
+  height: 12px;
+  line-height: 12px;
+  text-align: center;
+  font-family: "icomoon";
+  font-size: 12px;
+  position: absolute;
+  right: 0;
+  top: 11px;
+  vertical-align: middle;
+  /* -webkit-transform: rotate(180deg);
+                    -ms-transform: rotate(180deg);
+                    transform: rotate(180deg);  transform ie 9+ 以上支持 */
 }
-
+.bj_activity {
+  background-color: #fff;
+  border-color: #dbdbdb !important;
+}
+.seleted {
+  background-color: #f10215 !important;
+  color: #fff !important;
+}
+.shortcut a {
+  font-size: 12px;
+  color: #999999;
+}
+.shortcut a:hover {
+  color: #f10215;
+}
 .erweima {
-    width: 60px;
-    height: 60px;
-    border: 1px solid #ccc;
-    padding: 3px;
-    position: absolute;
-    left: -8px;
-    top: 32px;
+  width: 60px;
+  height: 60px;
+  border: 1px solid #ccc;
+  padding: 3px;
+  position: absolute;
+  left: -8px;
+  top: 32px;
 }
-
-.erweima::before { /* ie 9+ 及以上才对绝大多数 css 伪类支持，低版本有些不支持，如ie 8 支持 :before，但是不支持::before */
-    position: absolute;
-    left: 50%;
-    top: -9px;
-    margin-left: -5px; /* margin-left 这种写法很好，不需要考虑兼容问题 */
-    width: 0;
-    height: 0;
-    line-height: 0;
-    font-size: 0;
-    display: block;
-    content: '';
-    border-width: 5px;
-    border-style: solid;
-    border-color: #e4e4e4 #e4e4e4 #f6f6f6;
-    overflow: hidden;
+.erweima::before {
+  /* ie 9+ 及以上才对绝大多数 css 伪类支持，低版本有些不支持，如ie 8 支持 :before，但是不支持::before */
+  position: absolute;
+  left: 50%;
+  top: -9px;
+  margin-left: -5px;
+  /* margin-left 这种写法很好，不需要考虑兼容问题 */
+  width: 0;
+  height: 0;
+  line-height: 0;
+  font-size: 0;
+  display: block;
+  content: '';
+  border-width: 5px;
+  border-style: solid;
+  border-color: #e4e4e4 #e4e4e4 #f6f6f6;
+  overflow: hidden;
 }
 /* 京东 快捷导航模块制作 end */
-
 /* 京东 header 部分 start */
 .header {
-    height: 140px;
+  height: 140px;
 }
-
-.inner {
-    height: 140px;
-    position: relative;
+.header .inner {
+  height: 140px;
+  position: relative;
+  /* logo 部分 */
+  /* search 部分 */
+  /* 热词部分 */
+  /* 购物车部分 */
+  /* 图片部分 */
+  /* 导航栏信息 */
 }
-
-/* logo 部分 */
-.logo {
-    width: 190px;
-    height: 170px;
-    position: absolute;
-    left: 0;
-    top: -30px;
-    background-color: pink;
+.header .inner .logo {
+  width: 190px;
+  height: 170px;
+  position: absolute;
+  left: 0;
+  top: -30px;
+  background-color: pink;
 }
-
-.logo h1 {
-    margin: 0;
+.header .inner .logo h1 {
+  margin: 0;
 }
-
-.logo h1 a {
-    display: block;
-    width: 190px;
-    height: 170px;
-    background: url(../images/sprite.head.png) no-repeat 0 0;
-    text-indent: -999px;
-    overflow: hidden;
-    -webkit-box-shadow: 0 -12px 10px rgba(0,0,0,.2);
-    -moz-box-shadow: 0 -12px 10px rgba(0,0,0,.2);
-    box-shadow: 0 -12px 10px rgba(0,0,0,.2);
+.header .inner .logo h1 a {
+  display: block;
+  width: 190px;
+  height: 170px;
+  background: url(../images/sprite.head.png) no-repeat 0 0;
+  text-indent: -999px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 -12px 10px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 -12px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 -12px 10px rgba(0, 0, 0, 0.2);
 }
-
-/* search 部分 */
-.search {
-    width: 550px;
-    height: 35px;
-    position: absolute;
-    left: 320px;
-    top: 25px;  
+.header .inner .search {
+  width: 550px;
+  height: 35px;
+  position: absolute;
+  left: 320px;
+  top: 25px;
 }
-
-.search_txt {
-    width: 493px;
-    height: 33px;
-    line-height: 33px;
-    border: 1px solid #f10215; /* 加了边框会出现超出盒子显现，是因为 input 默认有内边距 */
-    padding-left: 5px; /*在盒子模型下，需要在宽度上减去 padding 值带来的影响*/
-    color: #989898;
-    outline: 0; /* 取消蓝色边框 */
-    /* 行内块与行内块之间是存在缝隙的，需要float 来清除 */
-    /* ie8 需要加上 float 来解决 显示错位问题，最好加上 line-height */
-    float: left; 
+.header .inner .search .search_txt {
+  width: 493px;
+  height: 33px;
+  line-height: 33px;
+  border: 1px solid #f10215;
+  /* 加了边框会出现超出盒子显现，是因为 input 默认有内边距 */
+  padding-left: 5px;
+  /*在盒子模型下，需要在宽度上减去 padding 值带来的影响*/
+  color: #989898;
+  outline: 0;
+  /* 取消蓝色边框 */
+  /* 行内块与行内块之间是存在缝隙的，需要float 来清除 */
+  /* ie8 需要加上 float 来解决 显示错位问题，最好加上 line-height */
+  float: left;
 }
-
-.search_btn {
-    width: 50px;
-    height: 35px;
-    background-color: #f10215;
-    float: left;
-    cursor: pointer;
-    outline: none;
+.header .inner .search .search_btn {
+  width: 50px;
+  height: 35px;
+  background-color: #f10215;
+  float: left;
+  cursor: pointer;
+  outline: none;
 }
-
-.search_btn i {
-    font-family: "icomoon";
-    color: #f6f6f6;
-    font-style: normal;
-    font-size: 16px;
+.header .inner .search .search_btn i {
+  font-family: "icomoon";
+  color: #f6f6f6;
+  font-size: 16px;
 }
-
-.search em {
-    width: 19px;
-    height: 15px;
-    position: absolute;
-    right: 65px;
-    top: 10px;
-    background: url(../images/sprite-photo-search.png) no-repeat 0 0;
-    cursor: pointer;
+.header .inner .search em {
+  width: 19px;
+  height: 15px;
+  position: absolute;
+  right: 65px;
+  top: 10px;
+  background: url(../images/sprite-photo-search.png) no-repeat 0 0;
+  cursor: pointer;
 }
-
-.search em:hover {
-    background-position: -30px 0;
+.header .inner .search em:hover {
+  background-position: -30px 0;
 }
-
-/* 热词部分 */
-.lotwords {
-    position: absolute;
-    left: 320px;
-    top: 70px;
+.header .inner .lotwords {
+  position: absolute;
+  left: 320px;
+  top: 70px;
 }
-
-.lotwords a {
-    color: #999999;
-    font-size: 12px;
-    margin-right: 10px;
+.header .inner .lotwords a {
+  color: #999999;
+  font-size: 12px;
+  margin-right: 10px;
 }
-
-.lotwords a:hover {
-    color: #f10215;
+.header .inner .lotwords a:hover {
+  color: #f10215;
 }
-
-/* 购物车部分 */
-.myCar {
-    width: 188px;
-    height: 33px;
-    line-height: 33px;
-    text-align: center;
-    border: 1px solid #e3e4e5;
-    position: absolute;
-    right: 100px;
-    top: 25px;
-    background-color: #fff;
+.header .inner .myCar {
+  width: 188px;
+  height: 33px;
+  line-height: 33px;
+  text-align: center;
+  border: 1px solid #e3e4e5;
+  position: absolute;
+  right: 100px;
+  top: 25px;
+  background-color: #fff;
 }
-
-.myCar a {
-    font-size: 12px;
-    color: #f10215;
+.header .inner .myCar a {
+  font-size: 12px;
+  color: #f10215;
 }
-
-.myCar i {
-    font-family: "icomoon";
-    font-style: normal;
-    color: #f10215;
-    margin-right: 3px;
+.header .inner .myCar i {
+  font-family: "icomoon";
+  color: #f10215;
+  margin-right: 3px;
 }
-
-.myCar s {
-    position: absolute;
-    left: 140px;
-    top: 5px;
-    right: auto; /* 有关购物车 数量的图标，一定都是设置 left 值得，然后 right: auto; */
-    text-decoration: none;
-    background-color: #f10215;
-    line-height: 12px;
-    text-align: center;
-    font-size: 12px;
-    color: #f0f0f0;
-    padding: 1px 3px;
-    behavior: url(../PIE.htc); /*ie8 及以下的 不支持圆角，可以通过 PIE.htc 文件来在低版本浏览器实现*/
-    -moz-border-radius: 7px;
-    -ms-border-radius: 7px;
-    border-radius: 7px; /* 这类型的圆角，一般不会设成 50% */
+.header .inner .myCar s {
+  position: absolute;
+  left: 140px;
+  top: 5px;
+  right: auto;
+  /* 有关购物车 数量的图标，一定都是设置 left 值得，然后 right: auto; */
+  text-decoration: none;
+  background-color: #f10215;
+  line-height: 12px;
+  text-align: center;
+  font-size: 12px;
+  color: #f0f0f0;
+  padding: 1px 3px;
+  behavior: url(../PIE.htc);
+  /*ie8 及以下的 不支持圆角，可以通过 PIE.htc 文件来在低版本浏览器实现*/
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  border-radius: 7px;
+  /* 这类型的圆角，一般不会设成 50% */
 }
-
-/* 图片部分 */
-.computer {
-    position: absolute;
-    right: 0;
-    bottom: 10px;
-    width: 190px;
-    height: 40px;
-    line-height: 40px;
-    text-align: center;
-    background-color: #fff;
+.header .inner .computer {
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+  width: 190px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background-color: #fff;
 }
-
-.computer a {
-    display: inline-block;
-    height: 40px;
+.header .inner .computer a {
+  display: inline-block;
+  height: 40px;
 }
-
-/* 导航栏信息 */
-.navitems {
-    position: absolute;
-    left: 200px;
-    bottom: 0px;
+.header .inner .navitems {
+  position: absolute;
+  left: 200px;
+  bottom: 0px;
 }
-
-.navitems ul {
-    float: left;                                         
+.header .inner .navitems ul {
+  float: left;
 }
-
-.navitems ul li {
-    float: left;
-    margin-left: 30px;
+.header .inner .navitems ul li {
+  float: left;
+  margin-left: 30px;
 }
-
-.navitems li a {
-    color: #5b5b5b;
-    font-size: 12px;
-    font-weight: 700;
-    display: block;
-    height: 40px;
-    line-height: 40px;
-    text-align: center;
-
+.header .inner .navitems ul li a {
+  color: #5b5b5b;
+  font-size: 12px;
+  font-weight: 700;
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
 }
-
-.navitems li a:hover {
-    color: #f10215;
+.header .inner .navitems ul li a:hover {
+  color: #f10215;
 }
-
-.navitems .spacer {
-    float: left;
-    margin: 15px -10px 0px 20px;
+.header .inner .navitems .spacer {
+  float: left;
+  margin: 15px -10px 0px 20px;
 }
 /* 京东 header 部分 end */
-
 /* 京东 footer 部分 start */
 .footer {
-    height: 560px;
-    background-color: #f0f3ef;
+  height: 560px;
+  background-color: #f0f3ef;
+  /* 多快好省 */
+  /* 帮助模块 */
+  /* 地图部分 */
 }
-
-/* 多快好省 */
-.footer-service {
-    border-bottom: 1px solid #dbdbdb;
+.footer .footer-service {
+  border-bottom: 1px solid #dbdbdb;
 }
-
-.service-inner {
-    padding: 30px 0;
+.footer .footer-service .service-inner {
+  padding: 30px 0;
 }
-
-.service-inner ul li {
-    float: left;
-    width: 297px;
-    height: 42px;
+.footer .footer-service .service-inner li {
+  float: left;
+  width: 297px;
+  height: 42px;
 }
-
-.service-unit {
-    height: 42px;
-    width: 225px;
-    line-height: 42px;
-    margin: 0 auto;
-    position: relative;
-} 
-
-.service-unit h5 {
-    width: 36px;
-    height: 42px;
-    background-color: #fff;
-    position: absolute;
-    left: 0;
-    top: 0;
-    background: url(../images/sprite.footer.png) no-repeat 0 -190px;
-    text-indent: -999px;
-    overflow: hidden;
+.footer .footer-service .service-inner li .service-unit {
+  height: 42px;
+  width: 225px;
+  line-height: 42px;
+  margin: 0 auto;
+  position: relative;
 }
-
-.service-unit P {
-    line-height: 42px;
-    margin-left: 45px;
-    font-size: 18px;
-    font-weight: 700;
+.footer .footer-service .service-inner li .service-unit h5 {
+  width: 36px;
+  height: 42px;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: url(../images/sprite.footer.png) no-repeat 0 -190px;
+  text-indent: -999px;
+  overflow: hidden;
 }
-
-.service-unit .kuai {
-    background-position: -41px -190px;
+.footer .footer-service .service-inner li .service-unit P {
+  line-height: 42px;
+  margin-left: 45px;
+  font-size: 18px;
+  font-weight: 700;
 }
-
-.service-unit .hao {
-    background-position: -82px -190px;
+.footer .footer-service .service-inner li .service-unit h5.kuai {
+  background-position: -41px -190px;
 }
-
-.service-unit .sheng {
-    background-position: -122px -190px;
+.footer .footer-service .service-inner li .service-unit h5.hao {
+  background-position: -82px -190px;
 }
-
-/* 帮助模块 */
-.module_help {
-    margin: 20px auto;
-    /* background-color: pink; */
+.footer .footer-service .service-inner li .service-unit h5.sheng {
+  background-position: -122px -190px;
 }
-
-.module_help dl {
-    float: left;
-    width: 198px;
+.footer .module_help {
+  margin: 20px auto;
 }
-
-.module_help dt {
-    font-size: 14px;
-    font-weight: 700;
-    color: #666;
-    height: 30px;
+.footer .module_help dl {
+  float: left;
+  width: 198px;
 }
-
-.module_help dd {
-    height: 22px;
+.footer .module_help dl dt {
+  font-size: 14px;
+  font-weight: 700;
+  color: #666;
+  height: 30px;
 }
-
-.module_help dd a {
-    color: #727272;
-    font-size: 12px;
+.footer .module_help dl dd {
+  height: 22px;
 }
-
-.module_help dd a:hover {
-    color: #f10215;
+.footer .module_help dl dd a {
+  color: #727272;
+  font-size: 12px;
 }
-
-.module_help .cover {
-    float: right;
-    width: 200px;
-    height: 150px;
-    background: url(../images/sprite.footer.png) 0 0;
+.footer .module_help dl dd a:hover {
+  color: #f10215;
 }
-
-.cover dt {
-    text-align: center;
+.footer .cover {
+  width: 200px;
+  height: 150px;
+  background: url(../images/sprite.footer.png) 0 0;
 }
-
-.cover .info {
-    height: auto;
-    color: #727272;
-    font-size: 12px;
-    line-height: 18px;
-    margin-top: 5px;
+.footer .cover dt {
+  text-align: center;
 }
-
-.more {
-    text-align: right;
-    padding-right: 10px;
+.footer .cover .info {
+  height: auto;
+  color: #727272;
+  font-size: 12px;
+  line-height: 18px;
+  margin-top: 5px;
+}
+.footer .cover .more {
+  text-align: right;
+  padding-right: 10px;
 }
 /* 京东 footer 部分 end */
