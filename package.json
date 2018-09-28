@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/BenPJJ/JD/issues"
   },
-  "homepage": "https://github.com/BenPJJ/JD#readme"
+  "homepage": "https://github.com/BenPJJ/JD#readme",
+  "dependencies": {
+    "mongoose": "^5.2.18"
+  }
 }

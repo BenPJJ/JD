@@ -2,7 +2,7 @@
  * @Author: benpjj 
  * @Date: 2018-09-08 15:51:16 
  * @Last Modified by: benpjj
- * @Last Modified time: 2018-09-18 11:44:22
+ * @Last Modified time: 2018-09-28 12:01:05
  */
 
 /* 京东顶部 */
@@ -35,6 +35,18 @@ $('#J_fl_cities').mouseenter(function () {
     $('#J_city').removeClass('bj_activity')
 })
 
+$('.J_dorpdown').mouseenter(function () {
+    $(this).addClass('bj_activity').find('.J_dorpdown_layer').show()
+}).mouseleave(function () {
+    $(this).removeClass('bj_activity').find('.J_dorpdown_layer').hide()
+})
+
+$('#J_mobile').mouseenter(function () {
+    $(this).css('zIndex', 3).find('.J_dorpdown_layer').show()
+}).mouseleave(function () {
+    $(this).find('.J_dorpdown_layer').hide()
+})
+
 var i = 0
 
 /* 搜索框部分 */
@@ -57,6 +69,13 @@ setInterval(function () {
     }
     $('#J_lotword').text(lotword[i])
 }, 2000)
+
+/* main 部分 */
+$('#J_jd_clo1 li').mouseenter(function () {
+    $('.J_cate_pop').eq($(this).index()).show()
+}).mouseleave(function () {
+    $('.J_cate_pop').eq($(this).index()).hide()
+})
 
 /* 新闻部分 */
 $('.J_hd_item_first').mouseenter(function () {

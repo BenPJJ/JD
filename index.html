@@ -14,7 +14,7 @@
     <!-- normalize 里面 css 初始化 针对浏览器 -->
     <link rel="stylesheet" href="./css/normalize.css">
     <!-- base 里面只写公共样式 是对京东网页 头部和底部样式 -->
-    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/base02.css">
     <!-- 京东首页 css 只写首页的 独有的 -->
     <link rel="stylesheet" href="./css/index.css">
 </head>
@@ -30,7 +30,7 @@
 
     <!-- 快捷导航模块制作开始 -->
     <div class="shortcut">
-        <div class="w clear">
+        <div class="w clear" style="position: relative;">
             <ul class="fl" id="J_fl">
                 <li class="bj" id="J_city">
                     <i class="icon_pos"></i>
@@ -120,34 +120,210 @@
                     <a href="#">我的订单</a>
                 </li>
                 <li class="spacer"></li>
-                <li class="dorpdown">
+                <li class="dorpdown J_dorpdown">
                     <a href="#">我的京东</a>
                     <i class="icon_ctrl"></i>
+                    <div class="dorpdown_layer layer1 clear J_dorpdown_layer">
+                        <ul class="clear">
+                            <li><a href="#">待处理订单</a></li>
+                            <li><a href="#">消息</a></li>
+                            <li><a href="#">返修退换货</a></li>
+                            <li><a href="#">我的问答</a></li>
+                            <li><a href="#">降价商品</a></li>
+                            <li><a href="#">我的关注</a></li>
+                        </ul>
+                        <div class="line"></div>
+                        <ul class="clear">
+                            <li><a href="#">我的京豆</a></li>
+                            <li><a href="#">我的优惠券</a></li>
+                            <li><a href="#">我的白条</a></li>
+                            <li><a href="#">我的理财</a></li>
+                        </ul>
+                    </div>
                 </li>
                 <li class="spacer"></li>
                 <li>
                     <a href="#">京东会员</a>
                 </li>
                 <li class="spacer"></li>
-                <li class="dorpdown">
+                <li class="dorpdown J_dorpdown">
                     <a href="#">企业采购</a>
                     <i class="icon_ctrl"></i>
+                    <div class="dorpdown_layer layer2 J_dorpdown_layer">
+                        <ul class="clear">
+                            <li><a href="#">企业购</a></li>
+                            <li><a href="#">商用场景馆</a></li>
+                            <li><a href="#">工业品</a></li>
+                            <li><a href="#">礼品卡</a></li>
+                        </ul>
+                    </div>
                 </li>
                 <li class="spacer"></li>
-                <li class="dorpdown">
+                <li class="dorpdown J_dorpdown">
                     <a href="#">客户服务</a>
                     <i class="icon_ctrl"></i>
+                    <div class="dorpdown_layer J_dorpdown_layer layer3">
+                        <h4>客户</h4>
+                        <ul class="clear">
+                            <li><a href="#">帮助中心</a></li>
+                            <li><a href="#">售后服务</a></li>
+                            <li><a href="#">在线客服</a></li>
+                            <li><a href="#">意见建议</a></li>
+                            <li><a href="#">电话客服</a></li>
+                            <li><a href="#">客服邮箱</a></li>
+                            <li><a href="#">金融咨询</a></li>
+                            <li><a href="#">全球售客服</a></li>
+                        </ul>
+                        <div class="line"></div>
+                        <h4>商户</h4>
+                        <ul class="clear">
+                            <li><a href="#">合作招商</a></li>
+                            <li><a href="#">学习中心</a></li>
+                            <li><a href="#">商家后台</a></li>
+                            <li><a href="#">京麦工作台</a></li>
+                            <li><a href="#">商家帮助</a></li>
+                            <li><a href="#">规则平台</a></li>
+                        </ul>
+                    </div>
                 </li>
                 <li class="spacer"></li>
-                <li class="dorpdown">
+                <li class="J_dorpdown">
                     <a href="#">网站导航</a>
                     <i class="icon_ctrl"></i>
+                    <div class="dorpdown_layer J_dorpdown_layer layer4 w clear">
+                        <div class="layer4_item l_item1">
+                            <h4>特色主题</h4>
+                            <ul class="clear">
+                                <li><a href="#">京东试用</a></li>
+                                <li><a href="#">京东金融</a></li>
+                                <li><a href="#">全球售</a></li>
+                                <li><a href="#">国际站</a></li>
+                                <li><a href="#">京东会员</a></li>
+                                <li><a href="#">京东预售</a></li>
+                                <li><a href="#">买什么</a></li>
+                                <li><a href="#">俄语站</a></li>
+                                <li><a href="#">装机大师</a></li>
+                                <li><a href="#">0元评测</a></li>
+                                <li><a href="#">定期送</a></li>
+                                <li><a href="#">港澳售</a></li>
+                                <li><a href="#">优惠券</a></li>
+                                <li><a href="#">秒杀</a></li>
+                                <li><a href="#">闪购</a></li>
+                                <li><a href="#">印尼站</a></li>
+                                <li><a href="#">京东金融科技</a></li>
+                                <li><a href="#">In货推荐</a></li>
+                                <li><a href="#">陪伴计划</a></li>
+                                <li><a href="#">出海招商</a></li>
+                            </ul>
+                        </div>
+                        <div class="layer4_item l_item2">
+                            <h4>行业频道</h4>
+                            <ul class="clear">
+                                <li><a href="#">手机</a></li>
+                                <li><a href="#">智能数码</a></li>
+                                <li><a href="#">玩3C</a></li>
+                                <li><a href="#">电脑办公</a></li>
+                                <li><a href="#">家用电器</a></li>
+                                <li><a href="#">京东智能</a></li>
+                                <li><a href="#">服装城</a></li>
+                                <li><a href="#">京东生鲜</a></li>
+                                <li><a href="#">家装城</a></li>
+                                <li><a href="#">母婴</a></li>
+                                <li><a href="#">食品</a></li>
+                                <li><a href="#">农资频道</a></li>
+                                <li><a href="#">整车</a></li>
+                                <li><a href="#">图书</a></li>
+                                <li><a href="#">京东元器件</a></li>
+                            </ul>
+                        </div>
+                        <div class="layer4_item l_item3">
+                            <h4>生活服务</h4>
+                            <ul class="clear">
+                                <li><a href="#">京东众筹</a></li>
+                                <li><a href="#">白条</a></li>
+                                <li><a href="#">京东金融App</a></li>
+                                <li><a href="#">京东小金库</a></li>
+                                <li><a href="#">理财</a></li>
+                                <li><a href="#">话费</a></li>
+                                <li><a href="#">水电煤</a></li>
+                                <li><a href="#">彩票</a></li>
+                                <li><a href="#">旅行</a></li>
+                                <li><a href="#">机票酒店</a></li>
+                                <li><a href="#">电影票</a></li>
+                                <li><a href="#">京东到家</a></li>
+                                <li><a href="#">游戏</a></li>
+                            </ul>
+                        </div>
+                        <div class="layer4_item l_item4">
+                            <h4>更多精选</h4>
+                            <ul class="clear">
+                                <li><a href="#">合作招商</a></li>
+                                <li><a href="#">京东通信</a></li>
+                                <li><a href="#">京东E卡</a></li>
+                                <li><a href="#">企业采购</a></li>
+                                <li><a href="#">服务市场</a></li>
+                                <li><a href="#">办公生活馆</a></li>
+                                <li><a href="#">乡村招募</a></li>
+                                <li><a href="#">校园加盟</a></li>
+                                <li><a href="#">京友邦</a></li>
+                                <li><a href="#">京东社区</a></li>
+                                <li><a href="#">游戏社区</a></li>
+                                <li><a href="#">知识产权维权</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </li>
                 <li class="spacer"></li>
-                <li style="position: relative; z-index: 1;">
+                <li class="dorpdown jd_mobile" id="J_mobile">
                     <a href="#">手机京东</a>
                     <div class="erweima">
                         <img src="./images/mobile_qrcode.png" alt="">
+                    </div>
+                    <div class="dorpdown_layer J_dorpdown_layer layer5">
+                        <div class="mobile_pop">
+                            <div class="mobile_pop_item clear">
+                                <div class="mobile_pop_qrcode"> 
+                                    <img src="./images/59a51bf6Nb8e478cc.png" alt="" srcset="">
+                                </div>
+                                <div class="mobile_pop_info">
+                                    <h5 class="mobile_pop_tit">
+                                        <a href="#">手机京东</a>
+                                    </h5>
+                                    <p class="mobile_pop_value">新人专享大礼包</p>
+                                    <p class="mobile_pop_device">
+                                        <a href="#">APP Store</a>
+                                        <a href="#" class="mobile_pop_device_and">安卓市场</a>
+                                        <a href="#" class="mobile_pop_device_pad">APP Store</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="mobile_pop_item clear">
+                                <div class="mobile_pop_qrcode"> 
+                                    <img src="./images/5874a54dNcec29924.jpg" alt="" srcset="">
+                                </div>
+                                <div class="mobile_pop_info">
+                                    <h5 class="mobile_pop_tit">
+                                        <a href="#">关注京东微信</a>
+                                    </h5>
+                                    <p class="mobile_pop_value">微信扫一扫关注<br>新粉最高180元<br>惊喜礼包</p>
+                                </div>
+                            </div>
+                            <div class="mobile_pop_item clear">
+                                <div class="mobile_pop_qrcode"> 
+                                    <img src="./images/5874a555Ne8192324.jpg" alt="" srcset="">
+                                </div>
+                                <div class="mobile_pop_info">
+                                    <h5 class="mobile_pop_tit">
+                                        <a href="#">京东金融客户端</a>
+                                    </h5>
+                                    <p class="mobile_pop_value">新人专享大礼包</p>
+                                    <p class="mobile_pop_device">
+                                        <a href="#">APP Store</a>
+                                        <a href="#" class="mobile_pop_device_and">安卓市场</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </li>
             </ul>
@@ -227,7 +403,7 @@
     <div class="jd">
         <div class="w jd_inner">
             <!-- 左 -->
-            <div class="jd_clo1">
+            <div class="jd_clo1" id="J_jd_clo1">
                 <ul>
                     <li><a href="#" target="_blank">家用电器</a></li>
                     <li>
@@ -349,6 +525,287 @@
                         <a href="#" target="_blank">清洗保养</a>
                     </li>
                 </ul>
+                <div>
+                    <div class="cate_pop J_cate_pop">
+                        <div class="cate_part clear">
+                            <div class="cate_part_col1">
+                                <div class="cate_channel clear">
+                                    <a href="#">
+                                        家电馆
+                                        <i class="iconfont">&#xe642;</i>
+                                    </a>
+                                    <a href="#">
+                                        乡镇专卖店
+                                        <i class="iconfont">&#xe642;</i>
+                                    </a>
+                                    <a href="#">
+                                        家电服务
+                                        <i class="iconfont">&#xe642;</i>
+                                    </a>
+                                    <a href="#">
+                                        家电企业购
+                                        <i class="iconfont">&#xe642;</i>
+                                    </a>
+                                    <a href="#">
+                                        商用电器
+                                        <i class="iconfont">&#xe642;</i>
+                                    </a>
+                                </div>
+                                <div class="cate_detail">
+                                    <dl class="cate_detail_item clear">
+                                        <dt class="cate_detail_tit">
+                                            <a href="#">
+                                                电视
+                                                <i class="iconfont">&#xe642;</i>
+                                            </a>
+                                        </dt>
+                                        <dd class="cate_detail_con">
+                                            <a href="#">曲面电视</a>
+                                            <a href="#">超薄电视</a>
+                                            <a href="#">OLED电视</a>
+                                            <a href="#">4K超清电视</a>
+                                            <a href="#">55英寸</a>
+                                            <a href="#">65英寸</a>
+                                            <a href="#">电视配件</a>
+                                        </dd>
+                                    </dl>
+                                </div>
+                                <div class="cate_detail">
+                                    <dl class="cate_detail_item clear">
+                                        <dt class="cate_detail_tit">
+                                            <a href="#">
+                                                空调
+                                                <i class="iconfont">&#xe642;</i>
+                                            </a>
+                                        </dt>
+                                        <dd class="cate_detail_con">
+                                            <a href="#">壁挂式空调</a>
+                                            <a href="#">柜式空调</a>
+                                            <a href="#">中央空调</a>
+                                            <a href="#">一级能效空调</a>
+                                            <a href="#">变频空调</a>
+                                            <a href="#">1.5匹空调</a>
+                                            <a href="#">单冷空调</a>
+                                            <a href="#">以旧换新</a>
+                                        </dd>
+                                    </dl>
+                                </div>
+                                <div class="cate_detail">
+                                    <dl class="cate_detail_item clear">
+                                        <dt class="cate_detail_tit">
+                                            <a href="#">
+                                                洗衣机
+                                                <i class="iconfont">&#xe642;</i>
+                                            </a>
+                                        </dt>
+                                        <dd class="cate_detail_con">
+                                            <a href="#">滚筒洗衣机</a>
+                                            <a href="#">洗烘一体机</a>
+                                            <a href="#">波轮洗衣机</a>
+                                            <a href="#">迷你洗衣机</a>
+                                            <a href="#">烘干机</a>
+                                            <a href="#">洗衣机配件</a>
+                                        </dd>
+                                    </dl>
+                                </div>
+                                <div class="cate_detail">
+                                    <dl class="cate_detail_item clear">
+                                        <dt class="cate_detail_tit">
+                                            <a href="#">
+                                                冰箱
+                                                <i class="iconfont">&#xe642;</i>
+                                            </a>
+                                        </dt>
+                                        <dd class="cate_detail_con">
+                                            <a href="#">多门</a>
+                                            <a href="#">对开门</a>
+                                            <a href="#">三门</a>
+                                            <a href="#">双门</a>
+                                            <a href="#">冷柜/冰吧</a>
+                                            <a href="#">酒柜</a>
+                                            <a href="#">冰箱配件</a>
+                                        </dd>
+                                    </dl>
+                                </div>
+                                <div class="cate_detail">
+                                    <dl class="cate_detail_item clear">
+                                        <dt class="cate_detail_tit">
+                                            <a href="#">
+                                                厨卫大电
+                                                <i class="iconfont">&#xe642;</i>
+                                            </a>
+                                        </dt>
+                                        <dd class="cate_detail_con">
+                                            <a href="#">油烟机</a>
+                                            <a href="#">燃气灶</a>
+                                            <a href="#">烟灶套装</a>
+                                            <a href="#">集成灶</a>
+                                            <a href="#">消毒柜</a>
+                                            <a href="#">洗碗机</a>
+                                            <a href="#">电热水器</a>
+                                            <a href="#">燃气热水器</a>
+                                            <a href="#">嵌入式厨电</a>
+                                        </dd>
+                                    </dl>
+                                </div>
+                                <div class="cate_detail">
+                                    <dl class="cate_detail_item clear">
+                                        <dt class="cate_detail_tit">
+                                            <a href="#">
+                                                厨房小电
+                                                <i class="iconfont">&#xe642;</i>
+                                            </a>
+                                        </dt>
+                                        <dd class="cate_detail_con">
+                                            <a href="#">破壁机</a>
+                                            <a href="#">电烤箱</a>
+                                            <a href="#">电饭煲</a>
+                                            <a href="#">电压力锅</a>
+                                            <a href="#">咖啡机</a>
+                                            <a href="#">豆浆机</a>
+                                            <a href="#">料理机</a>
+                                            <a href="#">电炖锅</a>
+                                            <a href="#">电饼铛</a>
+                                            <a href="#">多用途锅</a>
+                                            <a href="#">电水壶/热水瓶</a>
+                                            <a href="#">微波炉</a>
+                                            <a href="#">榨汁机/原汁机</a>
+                                            <a href="#">养生壶</a>
+                                            <a href="#">电磁炉</a>
+                                            <a href="#">面包机</a>
+                                            <a href="#">空气炸锅</a>
+                                            <a href="#">面条机</a>
+                                            <a href="#">电陶炉</a>
+                                            <a href="#">煮蛋器</a>
+                                            <a href="#">电烧烤炉</a>
+                                        </dd>
+                                    </dl>
+                                </div>
+                                <div class="cate_detail">
+                                    <dl class="cate_detail_item clear">
+                                        <dt class="cate_detail_tit">
+                                            <a href="#">
+                                                生活电器
+                                                <i class="iconfont">&#xe642;</i>
+                                            </a>
+                                        </dt>
+                                        <dd class="cate_detail_con">
+                                            <a href="#">吸尘器/除螨仪</a>
+                                            <a href="#">空气净化器</a>
+                                            <a href="#">取暖电器</a>
+                                            <a href="#">扫地机器人</a>
+                                            <a href="#">蒸汽拖把/拖地机</a>
+                                            <a href="#">干衣机</a>
+                                            <a href="#">电话机</a>
+                                            <a href="#">饮水机</a>
+                                            <a href="#">净水器</a>
+                                            <a href="#">除湿机</a>
+                                            <a href="#">挂烫机/熨斗</a>
+                                            <a href="#">加湿器</a>
+                                            <a href="#">电风扇</a>
+                                            <a href="#">冷风扇</a>
+                                            <a href="#">毛球修剪器</a>
+                                            <a href="#">生活电器配件</a>
+                                        </dd>
+                                    </dl>
+                                </div>
+                                <div class="cate_detail">
+                                    <dl class="cate_detail_item clear">
+                                        <dt class="cate_detail_tit">
+                                            <a href="#">
+                                                个护健康
+                                                <i class="iconfont">&#xe642;</i>
+                                            </a>
+                                        </dt>
+                                        <dd class="cate_detail_con">
+                                            <a href="#">剃须刀</a>
+                                            <a href="#">电动牙刷</a>
+                                            <a href="#">电吹风</a>
+                                            <a href="#">按摩器</a>
+                                            <a href="#">健康秤</a>
+                                            <a href="#">卷/直发器</a>
+                                            <a href="#">剃/脱毛器</a>
+                                            <a href="#">理发器</a>
+                                            <a href="#">足浴盆</a>
+                                            <a href="#">足疗机</a>
+                                            <a href="#">美容器</a>
+                                            <a href="#">洁面仪</a>
+                                            <a href="#">按摩椅</a>
+                                        </dd>
+                                    </dl>
+                                </div>
+                                <div class="cate_detail">
+                                    <dl class="cate_detail_item clear">
+                                        <dt class="cate_detail_tit">
+                                            <a href="#">
+                                                家庭影音
+                                                <i class="iconfont">&#xe642;</i>
+                                            </a>
+                                        </dt>
+                                        <dd class="cate_detail_con">
+                                            <a href="#">家庭影院</a>
+                                            <a href="#">KTV音响</a>
+                                            <a href="#">迷你音响</a>
+                                            <a href="#">DVD</a>
+                                            <a href="#">功放</a>
+                                            <a href="#">回音壁</a>
+                                            <a href="#">影音配件</a>
+                                        </dd>
+                                    </dl>
+                                </div>
+                                <div class="cate_detail">
+                                    <dl class="cate_detail_item clear">
+                                        <dt class="cate_detail_tit">
+                                            <a href="#">
+                                                进口电器
+                                                <i class="iconfont">&#xe642;</i>
+                                            </a>
+                                        </dt>
+                                        <dd class="cate_detail_con">
+                                            <a href="#">进口电器</a>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                            <div class="cate_part_col2">
+                                <div class="cate_brand clear">
+                                    <a href="#">
+                                        <img src="./images/5ac34afdN3b994321.jpg" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img src="./images/562f4971Na5379aba.jpg" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img src="./images/5b18e841N6f55f722.jpg" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img src="./images/5b18f3a7Nfc1eb1c0.jpg" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img src="./images/5b2637cdN5622c34b.jpg" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img src="./images/57f9fa89N6ddb14fc.jpg" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img src="./images/574c0755Nc8f19944.jpg" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img src="./images/5b18e39dNc73f336f.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="cate_promotion">
+                                    <a href="#">
+                                        <img src="./images/59a3cb87N24ba9d84.jpg" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img src="./images/2299f10ccd2b693b.jpg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <!-- 中 左-->
             <div class="jd_clo2">

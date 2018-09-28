@@ -2,7 +2,7 @@
  * @Author: benpjj 
  * @Date: 2018-09-08 11:54:40 
  * @Last Modified by: benpjj
- * @Last Modified time: 2018-09-17 09:51:59
+ * @Last Modified time: 2018-09-27 17:16:48
  */
 
 /* 版心 */
@@ -35,7 +35,6 @@ ul {
     margin: 0;
     padding: 0;
 }
-
 
 .clear::after {
     visibility: hidden;
@@ -80,6 +79,15 @@ em, i {
     url('../fonts/font_mvvc3v16awt/iconfont.ttf') format('truetype'),
     url('../fonts/font_mvvc3v16awt/iconfont.svg#iconfont') format('svg');
 }
+
+@font-face {
+    font-family: 'iconfont';
+    src: url('../fonts/font_855115_j1o2qv1wlbf/iconfont.eot');
+    src: url('../fonts/font_855115_j1o2qv1wlbf/iconfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/font_855115_j1o2qv1wlbf/iconfont.woff') format('woff'),
+    url('../fonts/font_855115_j1o2qv1wlbf/iconfont.ttf') format('truetype'),
+    url('../fonts/font_855115_j1o2qv1wlbf/iconfont.svg#iconfont') format('svg');
+  }
 
 /* icomoon */
 @font-face {
@@ -158,6 +166,7 @@ body {
     line-height: 30px;
     padding: 0 7px;
     border: 1px solid #e3e4e5;
+    border-bottom: 0px;
 }
 
 .bj_activity {
@@ -311,6 +320,199 @@ body {
 .dorpdown {
     padding-right: 15px!important;
     position: relative;
+    border: 1px solid #e3e4e5;
+    border-bottom: 0px;
+}
+
+.dorpdown_layer {
+    position: absolute;
+    top: 30px;
+    background-color: #fff;
+    z-index: 3;
+    -webkit-box-shadow: 1px 2px 1px rgba(0,0,0,.1);
+    -moz-box-shadow: 1px 2px 1px rgba(0,0,0,.1);
+    box-shadow: 1px 2px 1px rgba(0,0,0,.1);
+    border: 1px solid #dbdbdb;
+    border-top: 0px; 
+    display: none;
+}
+
+.layer1 {
+    width: 280px;
+    left: -1px;
+}
+
+.dorpdown_layer ul {
+    padding: 10px 0 10px 15px;
+}
+
+.layer1 li {
+    width: 130px;
+    padding: 0 0!important;
+    line-height: 24px;
+}
+
+.dorpdown_layer .line {
+    position: relative;
+    left: -15px;
+    width: 100%;
+    height: 1px;
+    background-color: #e3e4e5;
+    float: left;
+    margin: 5px 0;
+}
+
+.layer2 {
+    width: 155px;
+    left: -1px;
+}
+
+.layer2 li {
+    width: 60px;
+    padding: 0 0!important;
+    line-height: 24px;
+}
+
+.layer3 {
+    width: 170px;
+    right: -1px;
+}
+
+.layer3 h4 {
+    float: left;
+    display: block;
+    width: 100%;
+    margin-left: 5px;
+    color: #666;
+}
+
+.layer3 ul {
+    padding: 10px 0px;
+    margin-left: 5px;
+}
+
+.layer3 li {
+    width: 80px;
+    padding: 0 0!important;
+    line-height: 24px;
+}
+
+.layer3 .line {
+    width: 90%;
+    left: -5px;
+}
+
+.layer4 {
+    left: -0.5px;
+    top: 30px;
+    border: 1px solid #dbdbdb;
+    border-top: 0px;
+    padding: 10px 0px;
+    z-index: 4;
+}
+
+.layer4_item {
+    width: 255px;
+    float: left;
+    padding-left: 20px;
+    border-left: 1px solid #dbdbdb;
+}
+
+.l_item1 {
+    width: 340px;  
+    border: 0px;
+}
+
+.layer4_item ul {
+    padding: 10px 0px;
+}
+
+.layer4_item li {
+    width: 85px;
+    float: left;
+    padding: 0 0!important;
+    line-height: 24px;
+}
+
+.jd_mobile {
+    position: relative;
+    z-index: 1;
+}
+
+.layer5 {
+    right: 0;
+    display: none;
+}
+
+.mobile_pop {
+    width: 190px;
+    border: 1px solid #dbdbdb;
+    border-top: 0px;
+    border-bottom: 3px solid #60575a;
+}
+
+.mobile_pop_item {
+    padding: 12px 5px;
+    border-bottom: 1px solid #e3e4e5;
+}
+
+.mobile_pop_qrcode {
+    width: 74px;
+    height: 74px;
+    line-height: 74px;
+    text-align: center;
+    border: 1px solid #e3e4e5;
+    float: left;
+}
+
+.mobile_pop_qrcode img {
+    width: 70px;
+    height: 70px;
+    vertical-align: middle;
+    border: 0; /* 切记，图片是有边框的 */
+    margin: 0px 2px 2px 0;
+}
+
+.mobile_pop_info {
+    float: left;
+    font-size: 12px;
+    margin-left: 5px;
+    overflow: hidden;
+}
+
+.mobile_pop_tit {
+    font-size: 12px;
+    line-height: 17px;
+}
+
+.mobile_pop_tit a {
+    color: #666;
+    font-weight: 700;
+}
+
+.mobile_pop_value {
+    margin: 3px 0;
+    line-height: 12px;
+    color: #f10215;
+}
+
+.mobile_pop_device a {
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-color: pink;
+    float: left;
+    margin-right: 2px;
+    text-indent: -999px;
+    background: url(../images/sprite_mobile@1x.png) no-repeat;
+}
+
+a.mobile_pop_device_and {
+    background-position: 0 -26px;
+}
+
+a.mobile_pop_device_pad {
+    background-position: 0 -52px;
 }
 
 .icon_ctrl {
@@ -328,6 +530,11 @@ body {
     /* -webkit-transform: rotate(180deg);
     -ms-transform: rotate(180deg);
     transform: rotate(180deg);  transform ie 9+ 以上支持 */
+}
+
+.jd_mobile:hover .erweima::before {
+    top: -12px;
+    border-color: #e4e4e4 #e4e4e4 #fff;
 }
 
 .erweima {
@@ -547,7 +754,6 @@ body {
     height: 40px;
     line-height: 40px;
     text-align: center;
-
 }
 
 .navitems li a:hover {

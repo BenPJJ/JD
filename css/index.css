@@ -2,7 +2,7 @@
  * @Author: benpjj 
  * @Date: 2018-09-08 14:06:15 
  * @Last Modified by: benpjj
- * @Last Modified time: 2018-09-14 11:48:02
+ * @Last Modified time: 2018-09-28 11:58:08
  */
 
 /* 京东首页的 css */
@@ -43,6 +43,7 @@
     float: left;
     padding: 10px 0;
     border-top: 1px solid #f0f3ef;
+    position: relative;
 }
 
 .jd_clo1 li {
@@ -63,6 +64,150 @@
 .jd_clo1 li span {
     font-size: 12px;
     color: #626262;
+}
+
+.cate_pop {
+    position: absolute;
+    left: 190px;
+    top: 0;
+    width: 998px;
+    height: 480px;
+    border: 1px solid #dbdbdb;
+    -webkit-box-shadow: 1px 2px 1px rgba(0,0,0,.1);
+    -moz-box-shadow: 1px 2px 1px rgba(0,0,0,.1);
+    box-shadow: 1px 2px 1px rgba(0,0,0,.1);
+    z-index: 3;
+    background-color: #fff;
+    display: none;
+}
+
+.cate_part {
+    padding: 20px 0 10px;
+}
+
+.cate_part_col1 {
+    float: left;
+    width: 800px;
+}
+
+.cate_channel {
+    height: 24px;
+    line-height: 24px;
+    padding-left: 20px;
+}
+
+.cate_channel a {
+    display: block;
+    float: left;
+    font-size: 15px;
+    color: #fff;
+    background-color: #333;
+    margin-right: 10px;
+    padding: 0 10px;
+    position: relative;
+}
+
+.cate_channel a i {
+   display: block;
+   float: right;
+   width: 10px;
+   height: 10px;
+}
+
+.cate_channel a:hover {
+    background-color: rgba(0, 0, 0, .6);
+}
+
+.cate_detail {
+    padding: 10px 0 0 20px;
+    line-height: 16px;
+}
+
+.cate_detail_tit {
+    float: left;
+    width: 80px;
+    text-align: right;
+}
+
+.cate_detail_con {
+    float: left;
+    width: 700px;
+        /* word-wrap: normal; */
+    /* word-break: normal;
+    word-spacing: normal; */ 
+    /* word-wrap: normal | break-word; 允许长单词换行到下一行 
+       white-space: normal | per | nowrap | per-wrap | per-line; 处理元素内文本的空白符、换行符以及是否允许折行
+    
+    */
+
+}
+
+.cate_detail_item a {
+    font-size: 12px;
+    color: #666;
+    padding: 0 10px;
+}
+
+.cate_detail_tit a {
+    color: #333;
+    line-height: 16px;
+    font-weight: 700;
+} 
+
+.cate_detail_tit i {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -4px;
+}
+
+.cate_detail_con a {
+    float: left;
+    display: block;
+    border-left: 1px solid #dbdbdb; 
+    white-space: nowrap;
+    margin: 3px 0;
+    height: 16px;
+    line-height: 16px;
+}
+
+.cate_detail_tit:hover a, .cate_detail_con a:hover {
+    color: #f12015;
+}
+
+.cate_part_col2 {
+    width: 198px;
+    float: right;
+    margin: 0 auto;
+}
+
+.cate_brand, .cate_promotion {
+    width: 168px;
+}
+
+.cate_brand a {
+    float: left;
+    display: block;
+    width: 83px;
+    height: 35px;
+    border-top: 1px solid #fff;
+    border-left: 1px solid #fff;
+}
+
+.cate_brand a img {
+    display: block;
+    width: 83px;
+    height: 35px;
+}
+
+.cate_promotion {
+    margin-top: 10px;
+}
+
+.cate_promotion a {
+    display: block;
+    width: 168px;
+    height: 134px;
+    border-top: 1px solid #fff;
 }
 
 /* 中 左*/
@@ -205,6 +350,8 @@
     height: 480px;
     float: right;
     background-color: #fff;
+    position: relative;
+    z-index: 1;
 }
 
 /* 登录部分 */
